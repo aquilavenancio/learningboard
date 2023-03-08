@@ -1,6 +1,7 @@
 package com.aquila.learningboard.entyties;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
@@ -9,6 +10,7 @@ import java.time.LocalDate;
 import java.util.Calendar;
 
 @Data
+@Builder
 @ToString(callSuper = false, of = {"id", "name"})
 @EqualsAndHashCode(of = {"id", "name"})
 @Table(name = "project",schema = "learningboard")
